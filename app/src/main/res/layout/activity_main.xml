@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/IV_1"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:src="@drawable/upn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        />
+
+    <EditText
+        android:id="@+id/ET_nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="NAMA"
+        android:inputType="text"
+        android:layout_marginHorizontal="40dp"
+        android:layout_below="@id/IV_1" />
+    <EditText
+        android:id="@+id/ET_nim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="NIM"
+        android:inputType="text"
+        android:layout_marginHorizontal="40dp"
+        android:layout_below="@id/ET_nama" />
+
+    <EditText
+        android:id="@+id/ET_nilai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="NILAI"
+        android:inputType="numberDecimal"
+        android:layout_marginHorizontal="40dp"
+        android:layout_below="@id/ET_nim" />
+    <Button
+        android:id="@+id/Btn_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SUBMIT"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/ET_nilai" />
+
+
+</RelativeLayout>
